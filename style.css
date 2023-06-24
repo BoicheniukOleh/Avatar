@@ -254,11 +254,35 @@ a {
   margin-left: 80px;
 }
 
-.email {
-  width: 665px;
-  height: 24px;
+.footer-text-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.footer-text {
+  color: #fff;
+  font-size: 20px;
+  font-family: Inter;
   margin-top: 80px;
-  margin-bottom: 119px;
-  left: 786px;
-  margin: 80px;
+  width: 675px;
+  height: 24px;
+}
+
+.Vector {
+  margin: 0 20px;
+}
+
+.footer-text2 {
+  color: #fff;
+  font-size: 20px;
+  font-family: Inter;
+}
+
+.footer-bottom {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-family: Inter;
+  margin-top: 21px;
 }
