@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avatar</title>
-    <link rel="stylesheet" href="style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,127 +18,225 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header-avatar">
-      <img
-        src="images/avatar-2-6235acaebf926 2.png"
-        alt="Avatar"
-        class="logo"
-      />
-      <div class="overlay"></div>
-      <div class="nav">
-        <ul class="allcontact">
-          <li class="contact">Головна</li>
-          <li class="contact">Про нас</li>
-          <li class="contact">Контакти</li>
+    <header class="header">
+      <a href="#" class="logo"><img src="images/logo .png" alt="logo" /></a>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Головна</a></li>
+          <li><a href="#">Про нас</a></li>
+          <li><a href="#">Контакти</a></li>
         </ul>
-      </div>
-      <button class="button">Увійти</button>
-      <img src="images/Group 49.png" alt="eng-ukr" class="eng-ukr" />
+      </nav>
+      <a class="btn">Увійти</a>
+      <span class="lang">ENG</span>
+      <svg
+        width="36"
+        height="20"
+        viewBox="0 0 36 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="Switcher">
+          <rect
+            id="Rectangle 106"
+            x="0.5"
+            y="0.5"
+            width="35"
+            height="19"
+            rx="9.5"
+            stroke="white"
+          />
+          <circle id="Ellipse 18" cx="26" cy="10" r="6" fill="white" />
+        </g>
+      </svg>
+      <span class="lang">UKR</span>
     </header>
     <main class="container">
-      <div class="text-container">
-        <p class="text">
-          Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx 'ì'awn slu
-          Na'viyä hapxì. Säwem nìayoeng!
-        </p>
-        <img src="images/Rectangle 53.png" alt="Стрілка" class="arrow" />
-        <p class="text">
-          Хоробрий воїне, звертаюсь до тебе! Твій дух йде з Ейвою, твоє тіло
-          залишається, щоб стати частиною Народу. Борись разом з нами!
-        </p>
-        <button class="button-join">Приєднатись до каналу</button>
-      </div>
-    </main>
-    <section class="section">
-      <h1 class="many-people">“БАГАТО ЛЮДЕЙ З НЕБА ПРИЙДЕ.ВОНИ</h1>
-      <h1 class="many-people">
-        ПРИЙДУТЬ, ЯК ГРОЗА, ЯКА НІКОЛИ НЕ ЗАКІНЧУЄТЬСЯ.”
-      </h1>
-      <div>
-        <p class="jeck">Джейк Саллі</p>
-      </div>
-      <img src="images/Rectangle 8.png" alt="Птах" class="bird" />
-    </section>
-    <main class="btn">
-      <button class="btn-trailer">Дивитись трейлер</button>
-    </main>
-    <section class="section">
-      <h1 class="many-people">“ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ</h1>
-      <h1 class="many-people">ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”</h1>
-      <p class="jeck">Джейк Саллі</p>
-      <img src="images/Rectangle 8.png" alt="Птах" class="bird" />
-    </section>
+      <section class="section-first">
+        <div class="section-first-text">
+          <p>
+            Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx 'ì'awn slu
+            Na'viyä hapxì.Säwem nìayoeng!
+          </p>
+          <div class="media-list">
+            <ul>
+              <li>
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="inst 1" clip-path="url(#clip0_9_31)">
+                    <path
+                      id="Vector"
+                      d="M8.7 0H21.3C26.1 0 30 3.9 30 8.7V21.3C30 23.6074 29.0834 25.8203 27.4518 27.4518C25.8203 29.0834 23.6074 30 21.3 30H8.7C3.9 30 0 26.1 0 21.3V8.7C0 6.39261 0.916605 4.17973 2.54817 2.54817C4.17973 0.916605 6.39261 0 8.7 0ZM8.4 3C6.96783 3 5.59433 3.56892 4.58163 4.58163C3.56892 5.59433 3 6.96783 3 8.4V21.6C3 24.585 5.415 27 8.4 27H21.6C23.0322 27 24.4058 26.4311 25.4184 25.4184C26.4311 24.4058 27 23.0322 27 21.6V8.4C27 5.415 24.585 3 21.6 3H8.4ZM22.875 5.25C23.3722 5.25 23.8492 5.44755 24.2008 5.79918C24.5524 6.15081 24.75 6.62772 24.75 7.125C24.75 7.62228 24.5524 8.09919 24.2008 8.45082C23.8492 8.80245 23.3722 9 22.875 9C22.3778 9 21.9008 8.80245 21.5492 8.45082C21.1976 8.09919 21 7.62228 21 7.125C21 6.62772 21.1976 6.15081 21.5492 5.79918C21.9008 5.44755 22.3778 5.25 22.875 5.25ZM15 7.5C16.9891 7.5 18.8968 8.29017 20.3032 9.6967C21.7098 11.1032 22.5 13.0109 22.5 15C22.5 16.9891 21.7098 18.8968 20.3032 20.3032C18.8968 21.7098 16.9891 22.5 15 22.5C13.0109 22.5 11.1032 21.7098 9.6967 20.3032C8.29017 18.8968 7.5 16.9891 7.5 15C7.5 13.0109 8.29017 11.1032 9.6967 9.6967C11.1032 8.29017 13.0109 7.5 15 7.5ZM15 10.5C13.8065 10.5 12.6619 10.9741 11.818 11.818C10.9741 12.6619 10.5 13.8065 10.5 15C10.5 16.1934 10.9741 17.338 11.818 18.1819C12.6619 19.0258 13.8065 19.5 15 19.5C16.1934 19.5 17.338 19.0258 18.1819 18.1819C19.0258 17.338 19.5 16.1934 19.5 15C19.5 13.8065 19.0258 12.6619 18.1819 11.818C17.338 10.9741 16.1934 10.5 15 10.5Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_9_31">
+                      <rect width="30" height="30" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </li>
+              <li>
+                <svg
+                  width="34"
+                  height="30"
+                  viewBox="0 0 34 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="twitter 1" clip-path="url(#clip0_9_33)">
+                    <path
+                      id="Vector"
+                      d="M33.1656 3.52941C31.9756 4.14706 30.6928 4.55294 29.3637 4.74706C30.7237 3.81176 31.7747 2.32941 32.2692 0.547059C30.9865 1.42941 29.5647 2.04706 28.0656 2.4C26.8447 0.882353 25.1292 0 23.1819 0C19.5501 0 16.5828 3.38824 16.5828 7.57059C16.5828 8.17059 16.6447 8.75294 16.7528 9.3C11.2511 8.98235 6.35199 5.96471 3.09108 1.39412C2.51926 2.50588 2.19472 3.81176 2.19472 5.18824C2.19472 7.81765 3.35381 10.1471 5.14654 11.4706C4.04926 11.4706 3.02926 11.1176 2.1329 10.5882V10.6412C2.1329 14.3118 4.42017 17.3824 7.44926 18.0706C6.47676 18.3745 5.45577 18.4168 4.46654 18.1941C4.8863 19.6985 5.70837 21.0148 6.8172 21.9581C7.92604 22.9015 9.26587 23.4242 10.6484 23.4529C8.30487 25.5713 5.39999 26.7164 2.41108 26.7C1.88563 26.7 1.36017 26.6647 0.834717 26.5941C3.77108 28.7471 7.26381 30 11.0038 30C23.1819 30 29.8737 18.4588 29.8737 8.45294C29.8737 8.11765 29.8737 7.8 29.8583 7.46471C31.1565 6.40588 32.2692 5.06471 33.1656 3.52941Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_9_33">
+                      <rect width="34" height="30" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </li>
+              <li>
+                <svg
+                  width="50"
+                  height="30"
+                  viewBox="0 0 50 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="youtube 1" clip-path="url(#clip0_9_35)">
+                    <path
+                      id="Vector"
+                      d="M20 21.4286L32.975 15L20 8.57143V21.4286ZM48.9 4.65C49.225 5.65714 49.45 7.00714 49.6 8.72143C49.775 10.4357 49.85 11.9143 49.85 13.2L50 15C50 19.6929 49.6 23.1429 48.9 25.35C48.275 27.2786 46.825 28.5214 44.575 29.0571C43.4 29.3357 41.25 29.5286 37.95 29.6571C34.7 29.8071 31.725 29.8714 28.975 29.8714L25 30C14.525 30 8 29.6571 5.425 29.0571C3.175 28.5214 1.725 27.2786 1.1 25.35C0.775 24.3429 0.55 22.9929 0.4 21.2786C0.225 19.5643 0.15 18.0857 0.15 16.8L0 15C0 10.3071 0.4 6.85714 1.1 4.65C1.725 2.72143 3.175 1.47857 5.425 0.942857C6.6 0.664286 8.75 0.471429 12.05 0.342857C15.3 0.192857 18.275 0.128571 21.025 0.128571L25 0C35.475 0 42 0.342857 44.575 0.942857C46.825 1.47857 48.275 2.72143 48.9 4.65Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_9_35">
+                      <rect width="50" height="30" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </li>
+            </ul>
+          </div>
 
-    <!-- <img src="images/Group 40.png" alt="language" class="language" /> -->
-
-    <main class="main-language">
-      <div class="text-card">
-        <p class="teach">Вчимо мову На'ві</p>
-        <ul class="card-container">
-          <li class="boxcard">
-            <span class="hi">Привіт</span>
-            <img src="images/Rectangle 42.png" alt="arrow" class="arrow-left" />
-            <span class="textdown">Kaltxì</span>
+          <img
+            src="images/white-arrow-left.png"
+            alt="white-arrow-left"
+            class="white-arrow-left"
+          />
+          <p>
+            Хоробрий воїне, звертаюсь до тебе! Твій дух йде з Ейвою, твоє тіло
+            залишається, щоб стати частиною Народу. Борись разом з нами!
+          </p>
+          <button>Увійти</button>
+        </div>
+      </section>
+      <div class="card-bottom">
+        “БАГАТО ЛЮДЕЙ З НЕБА ПРИЙДЕ. ВОНИ<br />ПРИЙДУТЬ, ЯК ГРОЗА, ЯКА НІКОЛИ НЕ
+        ЗАКІНЧУЄТЬСЯ.”
+        <h3 class="name-card">Джейк Саллі</h3>
+        <img src="images/bird-arrow.png" alt="bird-arrow" />
+      </div>
+      <section class="section-second">
+        <button>Дивитись Трейлер</button>
+      </section>
+      <div class="card-bottom">
+        “ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ <br />ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”
+        <h3 class="name-card">Джейк Саллі</h3>
+        <img src="images/bird-arrow.png" alt="bird-arrow" />
+      </div>
+      <section class="section-three">
+        <h3>Вчимо мову На’ві</h3>
+        <ul class="section-container">
+          <li>
+            <p>Привіт</p>
+            <img src="images/arrow-left.png" alt="arrow-left" />
+            <p class="bxtext">Kaltxì</p>
           </li>
-          <li class="boxcard">
-            <span class="hi">Як справи?</span>
-            <img src="images/Rectangle 99.png" alt="arrow" class="arrowagle" />
-            <span class="textdown">Ngaru lu fpom srak?</span>
+          <li>
+            <p>Як справи</p>
+            <img src="images/bird-arrow.png" alt="bird-arrow" />
+            <p class="bxtext">Ngaru lu fpom srak?</p>
           </li>
-          <li class="boxcard">
-            <span class="hi">Все добре</span>
-            <img src="images/Rectangle 96.png" alt="arrow" class="arrowright" />
-            <span class="textdown">Lu fpom</span>
+          <li>
+            <p>Все добре</p>
+            <img src="images/arrow-right.png" alt="arrow-right" />
+            <p class="bxtext">Lu fpom</p>
           </li>
-          <li class="boxcard">
-            <span class="hi">Дякую</span>
-            <img src="images/Rectangle 42.png" alt="arrow" class="arrow-left" />
-            <span class="textdown">Irayo si </span>
+          <li>
+            <p>Дякую</p>
+            <img src="images/arrow-left.png" alt="arrow-left" />
+            <p class="bxtext">Irayo si</p>
           </li>
-          <li class="boxcard">
-            <span class="hi">Я бачу тебе</span>
-            <img src="images/Rectangle 99.png" alt="arrow" class="arrowagle" />
-            <span class="textdown">Oel ngati kameie</span>
+          <li>
+            <p>Я бачу тебе</p>
+            <img src="images/bird-arrow.png" alt="bird-arrow" />
+            <p class="bxtext">Oel ngati kameie</p>
           </li>
-          <li class="boxcard">
-            <span class="hi">Слідуй за мною!</span>
-            <img src="images/Rectangle 96.png" alt="arrow" class="arrowright" />
-            <span class="textdown">Nong oet!</span>
+          <li>
+            <p>Слідуй за мною!</p>
+            <img src="images/arrow-right.png" alt="arrow-right" />
+            <p class="bxtext">Nong oet!</p>
           </li>
         </ul>
-      </div>
-
-      <div class="section">
-        <h1 class="many-people">“НАША ВЕЛИКА МАТИ НЕ СТАЄ НА ЯКУСЬ СТОРОНУ,</h1>
-        <h1 class="many-people">ВОНА ЗАХИЩАЄ ЛИШЕ ЖИТТЄВИЙ БАЛАНС.”</h1>
-        <p class="jeck">Нейтірі</p>
-        <img src="images/Rectangle 8.png" alt="bird" class="bird" />
+      </section>
+      <div class="card-bottom">
+        “НАША ВЕЛИКА МАТИ НЕ СТАЄ НА ЯКУСЬ СТОРОНУ,<br />ВОНА ЗАХИЩАЄ ЛИШЕ
+        ЖИТТЄВИЙ БАЛАНС.”
+        <h3 class="name-card">Нейтірі</h3>
+        <img src="images/bird-arrow.png" alt="bird-arrow" />
       </div>
     </main>
     <footer class="footer">
-      <img
-        src="images/avatar-2-6235acaebf926 2.png"
-        alt="logo"
-        class="logo-footer"
-      />
-      <img src="images/Line 37.png" alt="Риска" class="line" />
-      <div class="footer-text-container">
-        <span class="footer-text"
-          >Q&A E-mail
-          <img src="images/Vector 8 (1).png" alt="Vector" class="Vector" />
-          avatartwowqa@gmail.com
-        </span>
-        <span class="footer-text2"
-          >Cooperation E-mail
-          <img src="images/Vector 8 (1).png" alt="vector" class="Vector" />
-          avatartwowcoop@gmail.com
-        </span>
-        <span class="footer-bottom">
-          ©2023 Avatar: The Way Of Water. All rights reserved
-        </span>
-      </div>
+      <a href="#"><img src="images/logo .png" alt="logo" /></a>
+      <img src="images/Line.png" alt="line" class="decofooter" />
+      <ul class="container-footer">
+        <li>
+          <p class="footer-text">
+            Q&A E-mail
+            <img src="images/vector.png" alt="vector" class="footer-vector" />
+            avatartwowqa@gmail.com
+          </p>
+        </li>
+        <li>
+          <p class="footer-text-two">
+            Cooperation E-mail
+            <img
+              src="images/vector.png"
+              alt="vector"
+              class="footer-vector"
+            />avatartwowcoop@gmail.com
+          </p>
+        </li>
+        <li class="footer-li">
+          <small class="footer-text-bottom"
+            >©2023 Avatar: The Way Of Water. All rights reserved</small
+          >
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
